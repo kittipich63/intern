@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@1,300&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+        body {
+            font-family: 'Kanit', sans-serif;
+            margin: 0;
+            padding: 0;
+            overflow: hidden; /* Hide overflow to prevent scrolling */
+        }
+
+        #background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        #logo-image {
+            position: fixed;
+            width: 15%;
+            top: 70px;
+            left: 80px;
+            z-index: 1;
+        }
+
+        #profile-container {
+            position: relative;
+            z-index: 1;
+            display: flex;
+            height: 30vh;
+            justify-content: flex-start;
+            align-items: center;
+            margin-left: 300px;
+        }
+
+        #avatar-container {
+            text-align: center;
+            margin-right: 20px;
+        }
+
+        #avatar {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            overflow: hidden;
+        }
+
+        #avatar img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        #employee-info {
+            text-align: left;
+            margin-top: 350px;
+            margin-left: -175px;
+        }
+
+        #employee-info h1, #employee-info p {
+            margin: 30px;
+            text-align: left;
+            margin-left: 0px;
+        }
+
+
+        #employee-id {
+            left: 20px;
+            font-size: 25px;
+            font-weight: bold;
+            color: #fff;
+        }
+
+        #name {
+            font-size: 25px;
+            font-weight: bold;
+            color: #fff;
+        }
+
+        #department {
+            font-size: 25px;
+            font-weight: bold;
+            color: #fff;
+        }
+
+        #detail-party {
+            position: relative;
+            top: 6px;
+            right: 10px;
+            padding: 75px;
+            text-align: right;
+            font-size: 20px;
+            font-weight: bold;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <div id="background">
+        <img src="/static/bg.png" alt="Background">
+    </div>
+
+    <div id="logo-image">
+        <img src="/static/yazaki-group-seeklogo.com-5.svg" alt="Logo">
+    </div>
+
+    <div id="detail-party">
+        <p>WELCOME TO NEWYEARPARTY 2024</p>
+        <p>16/12/2023</p>
+    </div>
+
+    <div id="profile-container">
+        <div id="avatar-container">
+            <div id="avatar">
+                <img src="https://picsum.photos/200/300" alt="Avatar">
+            </div>
+        </div>
+        <div id="employee-info">
+            <h1 id="employee-id">EMPLOYEE ID : 10234</h1>
+            <p id="name">NAME : John Doe</p>
+            <p id="department">DEPARTMENT : IT</p>
+        </div>
+    </div>
+</body>
+</html>
