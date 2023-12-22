@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>TEST : 10.200.2.31/iws/</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href='https://fonts.googleapis.com/css?family=Oswald:300' rel='stylesheet' type='text/css'>
+</head>
+
+<style>
+    :root {
+    --red: hsl(0, 78%, 62%);
+    --cyan: hsl(180, 62%, 55%);
+    --orange: hsl(34, 97%, 64%);
+    --purple: hsl(284, 100%, 22%);
+    --green: hsl(124, 100%, 50%);
+    --yellow: hsl(73, 99%, 55%);
+    --blue: hsl(212, 86%, 64%);
+    --varyDarkBlue: hsl(234, 12%, 34%);
+    --grayishBlue: hsl(229, 6%, 66%);
+    --veryLightGray: hsl(0, 0%, 98%);
+    --weight1: 200;
+    --weight2: 400;
+    --weight3: 600;
+}
+
+body {
+    font-size: 15px;
+    background-color: var(--veryLightGray);
+    text-align:center;
+    font-family: 'Oswald', sans-serif;
+}
+
+.attribution { 
+    font-size: 11px; text-align: center; 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+h1:first-of-type {
+    font-weight: var(--weight1);
+    color: var(--varyDarkBlue);
+
+}
+
+h1:last-of-type {
+    color: var(--varyDarkBlue);
+}
+
+@media (max-width: 400px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+}
+
+.box p {
+    color: var(--grayishBlue);
+}
+
+.box {
+    border-radius: 5px;
+    box-shadow: 0px 30px 40px -20px var(--grayishBlue);
+    padding: 30px;
+    margin: 20px;  
+}
+
+img {
+    float: right;
+}
+
+@media (max-width: 450px) {
+    .box {
+        height: 200px;
+    }
+}
+
+@media (max-width: 950px) and (min-width: 450px) {
+    .box {
+        text-align: center;
+        height: 180px;
+    }
+}
+
+.cyan {
+    border-top: 3px solid var(--cyan);
+}
+.red {
+    border-top: 3px solid var(--red);
+}
+.blue {
+    border-top: 3px solid var(--blue);
+}
+.orange {
+    border-top: 3px solid var(--orange);
+}
+.purple {
+    border-top: 3px solid var(--purple);
+}
+.green {
+    border-top: 3px solid var(--green);
+}
+.yellow {
+    border-top: 3px solid var(--yellow);
+}
+
+h2 {
+    color: var(--varyDarkBlue);
+    font-weight: var(--weight3);
+}
+
+
+@media (min-width: 950px) {
+    .row1-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .row2-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .row3-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .box-down {
+        position: relative;
+        top: 150px;
+    }
+
+    .box-up {
+        position: relative;
+        top: -150px;
+    }
+
+    .box {
+        width: 20%;
+     
+    }
+
+    .header p {
+        width: 30%;
+    }
+    
+}
+
+/* Menu */
+/* * {
+	-webkit-transition-property: all;
+	-webkit-transition-duration: .2s;
+  -moz-transition-timing-function: cubic-bezier(100,50,21,6);
+	-moz-transition-property: all;
+  -moz-transition-timing-function: cubic-bezier(100,50,21,6);
+} */
+
+h1{
+  color:#c0c0c0;
+  font-weight:100;
+}
+
+.btn{
+  color:#FF8800;
+  background: #383838;
+  padding:10px 20px;
+  font-size:12px;
+  text-decoration:none;
+  letter-spacing:2px;
+  text-transform:uppercase;
+}
+
+.btn:hover{
+  border:none;
+  background:rgba(0, 0, 0, 0.4);
+  background:#FF8800;
+  padding:20px 20px #000;
+  color:#fff;
+}
+
+</style>
+
+<body>
+  <h1>IT Web Support</h1>
+  <a href="#" class="btn">IT Web Support</a>
+  <a href="#" class="btn">IT Web Application</a>
+
+  <div class="row1-container">
+    <div class="box box-down cyan">
+        <h2>SYSTEM USER ACOUNT REQUEST FORM</h2>
+        <p>เว็บสำหรับขอ User, AS400 , Email</p>
+        <img width="64" height="64" src="https://img.icons8.com/external-flaticons-lineal-color-flat-icons/64/external-email-contact-us-icons-flaticons-lineal-color-flat-icons.png" alt="icons-email"/>
+    </div>
+
+    <div class="box red">
+        <h2>IHDS</h2>
+        <p>แจ้งปัญหาที่เกิดขึ้นกับคอมพิวเตอร์</p>
+        <img width="64" height="64" src="https://img.icons8.com/external-avoca-kerismaker/64/external-Problem-web-development-avoca-kerismaker.png" alt="icons-IHDS"/>
+    </div>
+
+    <div class="box box-down blue">
+        <h2>SERVs.Purchasing</h2>
+        <p>เว็บสำหรับสร้างใบ Quotation ใบ PR และ PO</p>
+        <img width="64" height="64" src="https://img.icons8.com/arcade/64/quote.png" alt="icons-quote"/>
+    </div>
+  </div>
+
+  <div class="row2-container">
+    <div class="box orange">
+      <h2>แบบฟอร์มฝ่าย Systems</h2>
+      <p>แบบฟอร์มฝ่ายต่างๆ</p>
+      <img width="64" height="64" src="https://img.icons8.com/color/48/fill-in-form.png" alt="icons-form"/>
+    </div>
+  </div>
+
+  <div class="row3-container">
+    <div class="box box-up purple">
+        <h2>Mantis</h2>
+        <p>แจ้งปัญหาที่เกิดขึ้นกับโปรแกรมที่ทางITเป็นผู้พัฒนา</p>
+        <img width="64" height="64" src="https://img.icons8.com/arcade/64/program.png" alt="icons-program"/>
+    </div>
+
+    <div class="box green">
+        <h2>Manual IT</h2>
+        <p>เว็บสำหรับดูคู่มือต่างๆของทาง IT ที่จัดทำขึ้น</p>
+        <img width="64" height="64" src="https://img.icons8.com/stickers/100/user-manual.png" alt="icons-manual"/>
+    </div>
+
+    <div class="box box-up yellow">
+        <h2>Systems Standard</h2>
+        <p>เว็บสำหรับดูStandardต่างๆของทาง IT ที่จัดทำขึ้น</p>
+        <img width="100" height="100" src="https://img.icons8.com/plasticine/100/networking-manager.png" alt="icons-networking"/>
+    </div>
+  </div>
+</body>
+
+</html>
